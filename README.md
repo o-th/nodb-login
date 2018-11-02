@@ -7,7 +7,8 @@ The examples folder shows two possible deploments of nodb-login:<br>
 * one pager
     * One page with everything included
 
-## Basic implmentation
+## Basic implementation
+*Break down of modules example*
 ### login.php
 ```
 <?php
@@ -78,7 +79,7 @@ if(isset($_GET['logout'])) {
 
 ## Sessions, get username, and other functions
 *Note: for any of the following functions to work you need to inilize the session function*
-### Sessions
+### sessions
 Intilize a session with<br>
 ```
 <?php session_start(); ?>
@@ -102,4 +103,22 @@ send a logout request via a get function(example is anchor tag)<br>
 <a href="?logout=1">Logout</a>
 ```
 
+## Change password
+in the login script find the $userinfo array
+```
+$userinfo = array(
+    //Change password here
+    'username'=>'password',
+);
+```
+Username = desired username<br>
+Password = desired password
 
+want more user/pass combos?<br>
+```
+$userinfo = array(
+    //Change password here
+    'username1'=>'password1',
+    'username2'=>'password2',
+);
+```
