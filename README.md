@@ -1,6 +1,12 @@
 # No Database Login
 ## What is this?
-Basic login system that doesnt require a database written in php.
+Basic login system that doesnt require a database written in php.<br>
+The examples folder shows two possible deploments of nodb-login:<br>
+* modules
+** Seperated Login, Logout, and Protected pages.
+* one pager
+** One page with everything included
+
 ## Basic implmentation
 ### login.php
 ```
@@ -69,3 +75,31 @@ if(isset($_GET['logout'])) {
 <!-- Redirect for no valid session-->
 <?php if(!$_SESSION['username']): echo '<script type="text/javascript"> window.location = "../login.php"</script>'; endif; ?>
 ```
+
+## Sessions, get username, and other functions
+*Note: for any of the following functions to work you need to inilize the session function*
+### Sessions
+Intilize a session with<br>
+```
+<?php session_start(); ?>
+```
+### get username
+```
+<?=$_SESSION['username']?>
+```
+### logout
+intilize logout<br>
+```
+<?php 
+if(isset($_GET['logout'])) {
+    $_SESSION['username'] = '';
+    header('Location:  ' . $_SERVER['PHP_SELF']);
+}
+?>
+```
+send a logout request via a get function(example is anchor tag)<br>
+```
+<a href="?logout=1">Logout</a>
+```
+
+
