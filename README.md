@@ -3,9 +3,9 @@
 Basic login system that doesnt require a database written in php.<br>
 The examples folder shows two possible deploments of nodb-login:<br>
 * modules
-** Seperated Login, Logout, and Protected pages.
+    * Seperated Login, Logout, and Protected pages.
 * one pager
-** One page with everything included
+    * One page with everything included
 
 ## Basic implmentation
 ### login.php
