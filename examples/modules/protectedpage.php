@@ -1,5 +1,5 @@
+<!-- Login Script, Sessions is initlized here. -->
 <?php
-//Login Script, Sessions is initlized here.
 session_start();
 
 if(isset($_GET['logout'])) {
@@ -8,9 +8,8 @@ if(isset($_GET['logout'])) {
 }
 ?>
 
-
+<!-- If theres a valid session then this will be shown-->
 <?php if($_SESSION['username']): ?>
-  <!-- If theres a valid session then this will be shown-->
   <P>Protected Content</P>
 <?php endif; ?>
         
