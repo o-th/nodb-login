@@ -1,5 +1,5 @@
+<!-- Login Script, Sessions is initlized here. -->
 <?php
-//Login Script, Sessions is initlized here.
 session_start();
 
 $userinfo = array(
@@ -18,10 +18,10 @@ if(isset($userinfo[$_POST["username"]]) && $userinfo[$_POST["username"]]==$_POST
 }
 ?>
 
-<!-- Shows if there is a valid session-->
+<!-- Redirect for valid session-->
 <?php if($_SESSION['username']): echo '<script type="text/javascript"> window.location = "protectedpage.php" </script>'; endif; ?>
 
-<!-- Shows if theres no valid session-->
+<!-- Login for no valid session-->
 <?php if(!$_SESSION['username']): ?>
     <form role="form" name="login" action="" method="post">
         <input class="form-control" placeholder="Username" name="username" type="username" value ="" autofocus>
