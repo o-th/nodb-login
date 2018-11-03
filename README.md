@@ -78,7 +78,7 @@ if(isset($_GET['logout'])) {
 ```
 
 ## Sessions, get username, and other functions
-*Note: for any of the following functions to work you need to inilize the session function*
+*Note: for any of the following functions to work you need to initialize the session function*
 ### sessions
 Intilize a session with<br>
 ```
