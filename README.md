@@ -74,7 +74,7 @@ if(isset($_GET['logout'])) {
 <?php endif; ?>
         
 <!-- Redirect for no valid session-->
-<?php if(!$_SESSION['username']): echo '<script type="text/javascript"> window.location = "../login.php"</script>'; endif; ?>
+<?php if(!$_SESSION['username']): echo '<script type="text/javascript"> window.location = "login.php"</script>'; endif; ?>
 ```
 
 ## Sessions, get username, and other functions
