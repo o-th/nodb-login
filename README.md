@@ -10,7 +10,7 @@ The [examples](https://github.com/isteinbrook/nodb-login/tree/master/examples) f
     * One page with everything included
 
 ## Basic implementation
-*Break down of [modules example.](https://github.com/isteinbrook/nodb-login/tree/master/examples/modules)
+*Break down of [modules example.](https://github.com/isteinbrook/nodb-login/tree/master/examples/modules)*
 ### login.php
 ```
 <?php
