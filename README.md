@@ -1,14 +1,14 @@
 # No Database Login
 ## What is this?
 Basic login system that doesnt require a database written in php.<br>
-The examples folder shows two possible deploments of nodb-login:<br>
-* modules
+The [examples](https://github.com/isteinbrook/nodb-login/tree/master/examples) folder shows two possible deploments of nodb-login:<br>
+* [modules](https://github.com/isteinbrook/nodb-login/tree/master/examples/modules)
     * Seperated Login, Logout, and Protected pages.
-* one pager
+* [one pager](https://github.com/isteinbrook/nodb-login/tree/master/examples/onepager)
     * One page with everything included
 
 ## Basic implementation
-*Break down of modules example*
+*Break down of [modules example.](https://github.com/isteinbrook/nodb-login/tree/master/examples/modules)
 ### login.php
 ```
 <?php
