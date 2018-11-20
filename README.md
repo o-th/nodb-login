@@ -105,6 +105,9 @@ send a logout request via a get function(example is anchor tag)<br>
 <a href="?logout=1">Logout</a>
 ```
 
+### Redirect for no valid session
+<?php if(!$_SESSION['username']): echo '<script type="text/javascript"> window.location = "login.php"</script>'; endif; ?>
+
 ## Change password
 in the login script find the $userinfo array
 ```
