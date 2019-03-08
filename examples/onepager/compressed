@@ -1,0 +1,11 @@
+<?php 
+session_start();
+$userinfo = array('username'=>'password',);
+if(isset($userinfo[$_POST["username"]]) && $userinfo[$_POST["username"]]==$_POST["password"]) { if($userinfo[$_POST['username']] == $_POST['password']) { $_SESSION['username'] = $_POST['username']; }else { //Invalid Login echo "<p>Invalid Login</p>"; } } ?> <?php script if(isset($_GET['logout'])) { $_SESSION['username'] = ''; header('Location: ' . $_SERVER['PHP_SELF']); } ?>
+
+<?php if($_SESSION['username']): ?>
+  <p style="text-align:right;">You are logged in as <?=$_SESSION['username']?> <a href="?logout=1">Logout</a></p>
+  <P>Protected Content</P>
+<?php endif; ?>
+
+<?php if(!$_SESSION['username']): ?> <form role="form" name="login" action="" method="post"> <input name="username" type="username" value =""> <input name="password" type="password"> <input type="submit" name="submit" value="Login" /> </form> <?php endif; ?>
